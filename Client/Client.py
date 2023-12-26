@@ -35,7 +35,7 @@ class RPSClientGUI:
 
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
-            client.connect((server_ip, 55559))
+            client.connect((server_ip, 55551))
             client.send(choice.encode('utf-8'))
 
             result = client.recv(1024).decode('utf-8')

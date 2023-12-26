@@ -58,7 +58,7 @@ def get_server_ip():
 def start_server():
     server_ip = get_server_ip()
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((server_ip, 55559))
+    server.bind((server_ip, 55551))
     server.listen(2)
 
     print(f"[SERVER IP] The server IP is: {server_ip}")
